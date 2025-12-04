@@ -24,7 +24,7 @@ public class FbrService {
             System.out.println("==============================");
             String response = restClient.post()
                     .uri("/di_data/v1/di/postinvoicedata_sb")
-                    .header("Authorization", "Bearer bdab7f8a-c9ae-318a-a20a-56ae2cd0d251")
+                    .header("Authorization", "Bearer 72647834723647936")
                     .header("Content-Type", "application/json")
                    // .header("regNo", "1728512")     // <-- REQUIRED
                  //   .header("channel", "POS")       // <-- REQUIRED
