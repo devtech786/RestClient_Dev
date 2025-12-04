@@ -13,8 +13,19 @@ public class RestClientApplication {
 
 	}
 
+//	@Bean
+//	public RestClient getRestClient() {
+//		return RestClient.builder().baseUrl("https://jsonplaceholder.typicode.com").build();
+//	}
+
+
 	@Bean
 	public RestClient getRestClient() {
-		return RestClient.builder().baseUrl("https://jsonplaceholder.typicode.com").build();
+		return RestClient.builder()
+				.baseUrl("https://gw.fbr.gov.pk")
+				.defaultHeader("Accept", "*/*")
+				.defaultHeader("Accept-Encoding", "gzip, deflate, br")
+				.defaultHeader("Connection", "keep-alive")
+				.build();
 	}
 }
